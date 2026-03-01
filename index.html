@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Horrors - Enter If You Dare</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Butcherman&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Warning Modal -->
+    <div id="warningModal" class="modal">
+        <div class="modal-content">
+            <h2>⚠️ WARNING ⚠️</h2>
+            <p>This website contains scary content that may cause nightmares.<br>
+            Contains flashing lights and loud sounds.<br>
+            <strong>Continue at your own risk...</strong></p>
+            <button class="btn btn--primary" id="enterButton">ENTER THE DARKNESS</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="hidden">
+        <!-- Floating Eyes -->
+        <div class="floating-eyes">
+            <div class="eye eye-left"></div>
+            <div class="eye eye-right"></div>
+        </div>
+
+        <!-- Header -->
+        <header class="hero-section">
+            <h1 class="horror-title">HOUSE OF HORRORS</h1>
+            <p class="horror-subtitle">Enter if you dare... each click unleashes terror</p>
+            <div class="countdown">
+                <span id="timeUntilDawn">Time until dawn: <span id="countdown">06:00:00</span></span>
+            </div>
+        </header>
+
+        <!-- Prank Buttons Grid -->
+        <section class="pranks-section">
+            <div class="container">
+                <div class="pranks-grid">
+                    <button class="prank-btn" id="btn1" data-effect="ghost">
+                        <span class="btn-text">SUMMON GHOST</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                    <button class="prank-btn" id="btn2" data-effect="whispers">
+                        <span class="btn-text">HEAR WHISPERS</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                    <button class="prank-btn" id="btn3" data-effect="blood">
+                        <span class="btn-text">SPILL BLOOD</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                    <button class="prank-btn" id="btn4" data-effect="glitch">
+                        <span class="btn-text">GLITCH REALITY</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                    <button class="prank-btn" id="btn5" data-effect="shadow">
+                        <span class="btn-text">SHADOW WALKER</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                    <button class="prank-btn" id="btn6" data-effect="eyes">
+                        <span class="btn-text">DEMON EYES</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                    <button class="prank-btn" id="btn7" data-effect="shatter">
+                        <span class="btn-text">SHATTER SCREEN</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                    <button class="prank-btn" id="btn8" data-effect="void">
+                        <span class="btn-text">ENTER VOID</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                    <button class="prank-btn" id="btn9" data-effect="cursor">
+                        <span class="btn-text">BLOODY CURSOR</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                    <button class="prank-btn" id="btn10" data-effect="heartbeat">
+                        <span class="btn-text">FINAL HEARTBEAT</span>
+                        <span class="btn-glow"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developer Profile Section -->
+        <section class="profile-section">
+            <div class="container">
+                <h2 class="profile-title">THE DARK CREATOR</h2>
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <div class="avatar-silhouette"></div>
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <div class="profile-content">
+                        <h3 class="profile-name" id="creatorName">K̸̰̈a̸̰̾r̸̰̈ṵ̸̈n̸̰̈ḛ̸̾s̸̰̈h̸̰̾ G̸̰̈ṵ̸̈p̸̰̾ẗ̸̰a̸̰̾</h3>
+                        <p class="profile-title-text">Digital Necromancer & Code Conjurer</p>
+                        
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Developer:</span>
+                                <span class="detail-value"> Karunesh Gupta</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Dark Realm:</span>
+                                <span class="detail-value">From the Haunted Servers of India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Academy of Darkness:</span>
+                                <span class="detail-value">B.Tech Computer Science & Engineering - 5th Semester<br>Allenhouse Institute of Technology</span>
+                            </div>
+                        </div>
+
+                        <div class="dark-specializations">
+                            <h4>Dark Specializations</h4>
+                            <ul class="spec-list">
+                                <li>🛡️ Guardian of Digital Souls (Cybersecurity)</li>
+                                <li>⚛️ Manipulator of Quantum Nightmares</li>
+                                <li>🤖 Trainer of AI Demons (Machine Learning)</li>
+                                <li>🏗️ Architect of Code Labyrinths (DSA)</li>
+                                <li>🌐 Weaver of Web Spells (Development)</li>
+                            </ul>
+                        </div>
+
+                        <div class="sinister-goals">
+                            <h4>Sinister Goals</h4>
+                            <ul class="goals-list">
+                                <li>🧪 Become a Mad Scientist (Cybersecurity + Quantum Physics)</li>
+                                <li>🚪 GATE Preparation - Gateway to Higher Darkness (IIT Kanpur)</li>
+                                <li>🎓 Master's/PhD in Forbidden Knowledge</li>
+                                <li>🔮 Unlock Quantum Cryptography Horrors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Effect Overlays -->
+    <div id="ghostOverlay" class="overlay hidden">
+        <div class="ghost-face">👻</div>
+    </div>
+
+    <div id="bloodOverlay" class="overlay hidden">
+        <div class="blood-drips">
+            <div class="blood-drop" style="left: 10%;"></div>
+            <div class="blood-drop" style="left: 25%;"></div>
+            <div class="blood-drop" style="left: 40%;"></div>
+            <div class="blood-drop" style="left: 55%;"></div>
+            <div class="blood-drop" style="left: 70%;"></div>
+            <div class="blood-drop" style="left: 85%;"></div>
+        </div>
+    </div>
+
+    <div id="glitchOverlay" class="overlay hidden">
+        <div class="glitch-effect"></div>
+    </div>
+
+    <div id="shadowOverlay" class="overlay hidden">
+        <div class="shadow-figure"></div>
+    </div>
+
+    <div id="crackOverlay" class="overlay hidden">
+        <div class="screen-crack"></div>
+    </div>
+
+    <div id="voidOverlay" class="overlay hidden">
+        <div class="void-content">
+            <div class="hidden-ghost">😈</div>
+        </div>
+    </div>
+
+    <div id="eyesContainer" class="hidden">
+        <div class="demon-eye" style="top: 20%; left: 10%;"></div>
+        <div class="demon-eye" style="top: 30%; right: 15%;"></div>
+        <div class="demon-eye" style="bottom: 25%; left: 20%;"></div>
+        <div class="demon-eye" style="bottom: 35%; right: 10%;"></div>
+    </div>
+
+    <div id="whisperText" class="whisper-container hidden">
+        <div class="whisper-text">They're watching you...</div>
+        <div class="whisper-text">Can you hear them?</div>
+        <div class="whisper-text">You shouldn't be here...</div>
+    </div>
+
+    <div id="bloodTrail" class="blood-trail-container"></div>
+
+    <!-- Audio Elements -->
+    <audio id="ambientMusic" loop>
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmMeBC+H2O/AaB8EOX7J8NiJOggSaa/v7Z5IEQ1SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr7Z5IEQ5SmO3svmMeBC+C2O+8ZB8EOX7O7tiNOQgNaLPr" type="audio/wav">
+    </audio>
+
+    <script src="app.js"></script>
+</body>
+</html>
